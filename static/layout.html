@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="15">
+    <title>Weather Status</title>
+</head>
+<body style="height: 100%; width:100%; margin: 0; background-color:{{.Color}};">
+    <div class="container" style="height: 100%; width:100%; margin: 0;">
+        <div class="baris1" style="width: 100%; height: 50%; display: flex; justify-content: center;">
+            <h1 style="position: relative; top: 50%; flex: 1 1 auto; text-align: center;">
+                <span style="color:black; background-color: white; padding: 10px; border-radius: 10px;">Water : {{.Water}} m</span>
+            </h1>
+            <h1 style="position: relative; top: 50%; flex: 1 1 auto; text-align: center;">
+                <span style="color:black; background-color: white; padding: 10px; border-radius: 10px;">Wind : {{.Wind}} m/d</span>
+            </h1>
+        </div>
+        <div class="baris2" style="width: 100%; height: 40%;">
+            <h1 style="position: relative; top: 50%; text-align: center;">
+                <span style="color:black; background-color: white; padding: 10px; border-radius: 10px;">Status : {{.Status}}</span>
+            </h1>
+        </div>
+    </div>
+</body>
+</html>
